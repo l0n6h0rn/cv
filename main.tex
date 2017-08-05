@@ -1,0 +1,193 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+% Options available
+% print: remove colors for print
+% english: use this language on all the document (default is French)
+\documentclass[print]{cv-style}
+
+\begin{document}
+
+\header{Julien}{Meunier}
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{\translate{contact}{contact}}
+\address{62 rue des Garennes
+92160 Antony
+France}
+\birthday{26 ans}
+\phone{+33 6 77 80 66 74}
+\mail{me@l0ngh0rn.ovh}
+\web{http://www.l0ngh0rn.ovh}
+\linkedin{julien-meunier}
+~
+%
+\section{\translate{langue}{language}}
+\lang{\translate{Français}{French}}{5}
+\lang{\translate{Anglais}{English}}{3}
+\lang{\translate{Espagnol}{Spanish}}{1}
+%
+\section{\translate{aperçu}{overview}}
+\skill{Geek}{5}
+\skill{OpenSource}{5}
+\skill{\translate{Réseau}{Network}}{4}
+\skill{Linux}{4}
+\skill{\translate{Virtualisation}{Virtualization}}{4}
+\skill{\translate{Programmation}{Programming}}{3}
+\skill{\translate{Télécoms}{Telecom}}{3}
+\skill{\translate{Electronique}{Electronic}}{2}
+%
+\section{\translate{programmation}{programming}}
+{\color{red} $\varheartsuit$} Python, Shell
+C, C++
+Rest, \LaTeX
+%
+~
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\translate{\section{compétence}}{\section{skill}}
+  \vspace{-0.2cm}
+\textbf{\translate{Environnement de travail}{Work environment}}: Linux, Debian / ArchLinux, i3, xterm, git, vim \\
+\textbf{\translate{Outils}{Tools}}: Django, GDB, Strongswan, DPDK, IXIA  \\
+\textbf{\translate{Virtualisation}{Virtualization}}: QEMU/KVM, Libvirt, OpenStack, OpenvSwitch, SRIOV (PF/VF) \\
+\textbf{\translate{Protocole réseau}{Network protocol}}: IPv4, IPv6, IPsec, IKE, TCP, UDP, VLAN, GRE, VXLAN, DNS, DHCP \\
+\textbf{\translate{Infrastructure}{Infrastructure}}: PXE, Proxmox, DRBD, InfluxDB, Grafana, Telegraf, Ansible
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\translate{\section{expérience}}{\section{experience}}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {2017--..}
+  {6WIND (Celad)}
+  {Saint-Quentin en Yvelines}
+  {\jobtitle{\translate{Ingénieur réseau - Support}{Network engineer - Support}}\\
+  \translate{Principales missions}{Main achievements}:
+  \begin{itemize}
+    \item \translate
+    {Traitement de tickets client niveau 2}
+    {Manage level 2 tickets from customers}
+    \item \translate
+    {Contact / WebEx / Debug sessions avec le client}
+    {Contact / WebEx / Debug sessions with the customer}
+    \item \translate
+    {Développement spécifique}
+    {Specific development}
+    \item \translate
+    {Démonstration et livraison clients}
+    {Show and delivery for customers}
+    \item \translate
+    {Maintenance de l'infrastructure réseau}
+    {Maintenance of network infrastructure}
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2014--2017}
+  {6WIND (Celad)}
+  {Saint-Quentin en Yvelines}
+  {\jobtitle{\translate{Ingénieur réseau - Intégration et maintenance}{Network engineer - Integration and Maintenance}}\\
+  \translate{Principales missions}{Main achievements}:
+  \begin{itemize}
+    \item \translate
+    {Développement de tests réseaux en machines virtuelles ou physiques}
+    {Network tests development on virtual or physical machines}
+    \item \translate
+    {Maintenance du logiciel et des outils internes}
+    {Maintenance of the software and internal tools}
+    \item \translate
+    {Contribution opensource: DPDK, Kernel}
+    {Opensource contribution: DPDK, Kernel}
+    \item \translate
+    {Intégration continue}
+    {Continuous integration}
+    \item \translate
+    {Gestion, orchestration et supervision de l'infrastructure réseau interne et distante de l'entreprise}
+    {Manage, orchestrate and supervise internal and remote network infrastructure of the company}
+  \end{itemize}}
+%------------------------------------------------
+\entry
+  {2014}
+  {CEA Tech}
+  {Palaiseau}
+  {\jobtitle{\translate{Stage de fin d'étude}{End-of-year intership}}\\
+  \translate
+  {Développement d'un routeur mobile véhiculaire 4G, WiFi, 802.11p, avec Mobility IPv4 et IPv6 + M2M.}
+  {Mobile router development for vehicle with 4G, WiFi, 802.11p, and with Mobility IPv4, IPv6 + M2M.}
+   \\}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\translate{\section{formation}}{\section{education}}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2011-2014}
+{\translate
+   {Ingénieur généraliste {\normalfont spécialisé en Electronique et Télécommunications}}
+   {Engineer {\normalfont specialized in Electronic and Telecommunication}}
+}
+{ENSIL}
+{\translate{Majorant de filière}{First of the section}}
+%------------------------------------------------
+\entry
+{2009-2011}
+{\translate
+   {Classe Préparatoire aux Grandes Ecoles {\normalfont PCSI-PSI*}}
+   {Preparatory classes for the Grandes Ecoles {\normalfont PCSI-PSI*}}
+}
+{Lycée Pothier}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ENVOLT SECTION
+%----------------------------------------------------------------------------------------
+
+\translate{\section{bénévolat}}{\section{volunteer}}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014-..}
+{\translate{Développeur web}{Web developer}}
+{Relais de l'ENSIL}
+{\translate
+   {Maintenance du site web. Développement d'un outil web pour l'inscription des coureurs, du chronométrage et des récompenses par catégories.}
+   {Maintenance of the website. Development of online registration tool for runner, time-keeping and recompenses per category.}
+}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\translate{\section{intérêt}}{\section{interest}}
+  \vspace{-0.2cm}
+
+\translate
+{\textbf{professionel:} convergence télécom / informatique, SDN, cloud, virtualisation, radio.}
+{\textbf{professional:} convergence telecom / computing  , SDN, cloud, virtualization, radio.}
+\\
+\translate
+{\textbf{personnel:} nouvelles technologies, séries, photographie.}
+{\textbf{personnel:} new technologies, TV shows, photography.}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
